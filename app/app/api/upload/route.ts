@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const CF_WORKER_URL = "https://cf-journal.senchatea.workers.dev"
+const CF_WORKER_URL = "http://localhost:8787"
 
 export async function POST(request: NextRequest) {
     const data = await request.formData();
